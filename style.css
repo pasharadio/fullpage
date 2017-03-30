@@ -1,3 +1,7 @@
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 header {
     top: 0;
 }
@@ -53,7 +57,7 @@ footer {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 36px;
     margin-top: 60px;
     text-align: left;
     color: #ffffff;
@@ -90,7 +94,7 @@ p {
     text-align: left;
     color: #ffffff;
     font-size: 16px;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
 }
 
 ul {
@@ -105,6 +109,33 @@ ul>li {
     margin-bottom: 3px;
 }
 
+
+.blogblock{
+	transition: all .5s linear;
+}
+.blogblock:hover {
+box-shadow: 0px 0px 20px 1px #d4d4d4;
+}
+
+footer {
+    height: 80px;
+}
+.fp-controlArrow.fp-prev {
+    width: 60px!important;
+    height: 70px;
+    background: url(img/back-arrow.svg) center no-repeat;
+    border: 0;
+}
+.fp-controlArrow.fp-next {
+    width: 60px!important;
+    height: 70px;
+    background: url(img/forward-arrow.svg) center no-repeat;
+    border: 0;
+}
+.fp-controlArrow{
+	top: 95%!important;
+}
+/*------- ANIMATION ----*/
 .scroll-down {
     position: relative;
     -webkit-animation: scrolldown 1s infinite;
@@ -114,7 +145,6 @@ ul>li {
     animation: scrolldown 1s infinite;
     animation-direction: alternate;
 }
-
 
 /* Safari 4.0 - 8.0 */
 
@@ -148,9 +178,6 @@ ul>li {
     }
 }
 
-footer{
-height: 80px;
-}
 @media screen and (max-width:992px) {
     .fheight {
         display: block;
