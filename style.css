@@ -1,7 +1,13 @@
-.h1, .h2, .h3, h1, h2, h3 {
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 header {
     top: 0;
 }
@@ -65,8 +71,9 @@ h1 {
 
 .fa {
     font-size: 32px;
-    padding: 9px;
+    padding: 8px;
     color: #ffffff;
+    transition: all .3s linear;
 }
 
 .padding {
@@ -76,9 +83,11 @@ h1 {
 .paddingcentered {
     padding: 30px 130px;
 }
-hr{
-	border-top: 1px solid #fff;
+
+hr {
+    border-top: 1px solid #fff;
 }
+
 a {
     color: #ffffff;
 }
@@ -111,41 +120,64 @@ ul>li {
     margin-bottom: 3px;
 }
 
+.fa-facebook:hover {
+    color: #3b5998;
+    border-bottom: 3px solid #3b5998;
+}
+.fa-youtube-play:hover{
+	color: #CC181E;
+	    border-bottom: 3px solid #CC181E;
+}
+.fa-instagram:hover{
+	color: #8A3AB9;
+	    border-bottom: 3px solid #8A3AB9;
+}
+.fa-vk:hover{
+	color: #507299;
+	    border-bottom: 3px solid #507299;
+}
+.blogblock {
+    transition: all .5s linear;
+}
 
-.blogblock{
-	transition: all .5s linear;
-}
 .blogblock:hover {
-box-shadow: 0px 0px 20px 1px #d4d4d4;
+    box-shadow: 0px 0px 20px 1px #d4d4d4;
 }
-.nextphblock{
-	    border: 1px solid #000;
+
+.nextphblock {
+    border: 1px solid #000;
     height: 530px;
     width: 100%;
     float: right;
     background: #fff;
 }
-.nopadding{
-	padding: 0;
+
+.nopadding {
+    padding: 0;
 }
+
 footer {
     height: 80px;
 }
+
 .fp-controlArrow.fp-prev {
     width: 60px!important;
     height: 60px;
-    background:rgba(255,255,255,.7) url(img/back-arrow.svg) center no-repeat;
+    background: rgba(255, 255, 255, .7) url(img/back-arrow.svg) center no-repeat;
     border: 0;
 }
+
 .fp-controlArrow.fp-next {
     width: 60px!important;
     height: 60px;
-    background:rgba(255,255,255,.7) url(img/forward-arrow.svg) center no-repeat;
+    background: rgba(255, 255, 255, .7) url(img/forward-arrow.svg) center no-repeat;
     border: 0;
 }
-.fp-controlArrow{
-	top: 95%!important;
+
+.fp-controlArrow {
+    top: 95%!important;
 }
+
 #fp-nav ul li .fp-tooltip {
     top: -5px!important;
     color: #fff!important;
@@ -154,10 +186,15 @@ footer {
     background: black!important;
     padding: 2px 5px!important;
 }
-#fp-nav ul li a span, .fp-slidesNav ul li a span{
-	background: #f00!important;
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #f00!important;
 }
+
+
 /*------- ANIMATION ----*/
+
 .scroll-down {
     position: relative;
     -webkit-animation: scrolldown 1s infinite;
@@ -167,6 +204,7 @@ footer {
     animation: scrolldown 1s infinite;
     animation-direction: alternate;
 }
+
 
 /* Safari 4.0 - 8.0 */
 
@@ -205,7 +243,19 @@ footer {
         display: block;
     }
 }
-:focus::-webkit-input-placeholder {color: transparent}
-:focus::-moz-placeholder          {color: transparent}
-:focus:-moz-placeholder           {color: transparent}
-:focus:-ms-input-placeholder      {color: transparent}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+:focus::-moz-placeholder {
+    color: transparent
+}
+
+:focus:-moz-placeholder {
+    color: transparent
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent
+}
