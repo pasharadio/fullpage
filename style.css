@@ -70,13 +70,15 @@ h1 {
 }
 
 .padding {
-    padding: 16px;
+    padding: 15px;
 }
 
 .paddingcentered {
     padding: 30px 130px;
 }
-
+hr{
+	border-top: 1px solid #fff;
+}
 a {
     color: #ffffff;
 }
@@ -98,7 +100,7 @@ p {
 }
 
 ul {
-    padding: 3% 6%;
+    padding: 4% 8%;
     font-size: 14px;
     color: #fff;
     text-align: left;
@@ -116,24 +118,41 @@ ul>li {
 .blogblock:hover {
 box-shadow: 0px 0px 20px 1px #d4d4d4;
 }
-
+.nextphblock{
+	    border: 1px solid #000;
+    height: 530px;
+    width: 100%;
+    float: right;
+    background: #fff;
+}
+.nopadding{
+	padding: 0;
+}
 footer {
     height: 80px;
 }
 .fp-controlArrow.fp-prev {
     width: 60px!important;
-    height: 70px;
-    background: url(img/back-arrow.svg) center no-repeat;
+    height: 60px;
+    background:rgba(255,255,255,.7) url(img/back-arrow.svg) center no-repeat;
     border: 0;
 }
 .fp-controlArrow.fp-next {
     width: 60px!important;
-    height: 70px;
-    background: url(img/forward-arrow.svg) center no-repeat;
+    height: 60px;
+    background:rgba(255,255,255,.7) url(img/forward-arrow.svg) center no-repeat;
     border: 0;
 }
 .fp-controlArrow{
 	top: 95%!important;
+}
+#fp-nav ul li .fp-tooltip {
+    top: -5px!important;
+    color: #fff!important;
+    font-size: 14px!important;
+    cursor: pointer!important;
+    background: black!important;
+    padding: 2px 5px!important;
 }
 /*------- ANIMATION ----*/
 .scroll-down {
@@ -183,3 +202,7 @@ footer {
         display: block;
     }
 }
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
