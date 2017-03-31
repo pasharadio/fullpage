@@ -18,13 +18,13 @@
         $('#fullpage').fullpage({
             //Navigation
             menu: '#menu',
-            lockAnchors: false,
-            anchors: ['hero-image', 'rent-studio'],
+            lockAnchors: true,
+            anchors: ['hero-image', 'rent-studio', 'studioServices', 'coworkPh', 'coworkMd', 'blog', 'contacts' ],
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: ['LETS TALK', 'RENT', 'SERVICES', 'PH', 'MD', 'BLOG', 'CONTACTS'],
-            showActiveTooltip: false,
-            slidesNavigation: false,
+            showActiveTooltip: true,
+            slidesNavigation: true,
             slidesNavPosition: 'bottom',
 
             //Scrolling
@@ -63,7 +63,7 @@
             //Design
             controlArrows: true,
             verticalCentered: false,
-            sectionsColor: ['#cacaca', '#000', '#ffffff'],
+            sectionsColor: ['#cacaca', '#404040', '#ffffff'],
             paddingTop: '0',
             paddingBottom: '10px',
             fixedElements: '#header, .footer',
@@ -128,7 +128,7 @@
             <img src="img/logo.png" class="logo-full-img" alt="logo_full">
             <div style="    background: rgba(255, 255, 255, 0.3);width: 40%;height: 0px;display: block;margin: 0 auto;box-shadow: 0 0 110px 20px #fff;">
                 <h1 class="hero-heading">LET'S TALK ABOUT YOUR PROJECT</h1></div>
-            <img class="scroll-down" src="img/scroll-down.svg" />
+            <img class="scroll-down" src="img/down.svg" />
         </div>
         <div class="section" data-anchor="rent-studio">
             <div class="slide">
@@ -149,25 +149,25 @@
                                     <tr bgcolor="#ffffff" style="width: 100%;display: block;height: 70px;padding: 0;margin: 0;">
                                         <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;width: 50%;float: left;">Mon. — Fri.
                                             <br>from 10.00 to 18.00</td>
-                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 4px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#000000">150 UAH</td>
+                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 4px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#404040">150 UAH</td>
                                     </tr>
-                                    <tr style="padding: 5px 0;display: block;width: 50%;height: 10px;" bgcolor="#000000">
+                                    <tr style="padding: 5px 0;display: block;width: 50%;height: 10px;" bgcolor="#404040">
                                         <td style="height: 7px; display: block;">&nbsp;</td>
                                     </tr>
                                     <tr bgcolor="#ffffff" style="width: 100%;display: block;float: left;">
                                         <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;width: 50%;display: block;float: left;">Mon. — Fri.
                                             <br>from 18.00 to 10.00</td>
-                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#000000">200 UAH</td>
+                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#404040">200 UAH</td>
                                     </tr>
-                                    <tr style="padding: 5px 0;display: inline-block;width: 50%;height: 1px;float: left;" bgcolor="#000000">
+                                    <tr style="padding: 5px 0;display: inline-block;width: 50%;height: 1px;float: left;" bgcolor="#404040">
                                         <td style="height: 7px; display: block;">&nbsp;</td>
                                     </tr>
                                     <tr bgcolor="#ffffff" style="display: block;float: left;width: 100%;">
                                         <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;float: left;width: 50%;display: block;">Sat. — Sun.
                                             <br>from 10.00 to 18.00</td>
-                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#000000">200 UAH</td>
+                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#404040">200 UAH</td>
                                     </tr>
-                                    <tr style="padding: 5px 0;display: inline-block;width: 50%;height: 1px;float: left;" bgcolor="#000000">
+                                    <tr style="padding: 5px 0;display: inline-block;width: 50%;height: 1px;float: left;" bgcolor="#404040">
                                         <td style="height: 7px; display: block;">&nbsp;</td>
                                     </tr>
                                     <tr bgcolor="#ffffff" style="display: inline-block;width: 100%;height: 50px;float: left;">
@@ -217,7 +217,7 @@
                 <br>
             </div>
         </div>
-        <div class="section" data-anchor="thirdPage">
+        <div class="section" data-anchor="studioServices">
             <div class="container-fluid">
                 <div class="row padding">
                     <h1 style="color: black;">STUDIO SERVICES</h1>
@@ -238,7 +238,7 @@
                 </div>
             </div>
         </div>
-        <div class="section padding" data-anchor="fourthPage">
+        <div class="section padding" data-anchor="coworkPh">
             <div class="container-fluid">
                 <div class="row">
                     <h1 style="color: black;">COWORK PHOTOGRAPHER</h1>
@@ -295,7 +295,7 @@
                 </div>
             </div>
         </div>
-        <div class="section padding" data-anchor="fifthhPage">
+        <div class="section padding" data-anchor="coworkMd">
             <div class="container-fluid">
                 <div class="row">
                     <h1 style="color: black;">COWORK MODELS</h1>
@@ -346,7 +346,7 @@
                 </div>
             </div>
         </div>
-        <div class="section padding" data-anchor="sixthPage">
+        <div class="section padding" data-anchor="blog">
             <div class="slide">
                 <div class="container-fluid">
                     <div class="row" style="padding: 0px">
@@ -391,15 +391,14 @@
                 </div>
             </div>
         </div>
-        <div class="section" data-anchor="seventhPage">
+        <div class="section" data-anchor="contacts">
             <div class="slide padding">
                 <div class="container-fluid">
                     <div class="row">
                         <h1 style="color: black;">CONTACTS</h1>
                         <div class="col-md-6" style="padding: 0;">
-                            <div id="text-2883-sub_row_6-0-1-0-2" class="module module-text text-2883-sub_row_6-0-1-0-2   wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;background: black;width: 100%;
-    display: inline-block;">
-                                <div style="float: left; width: 50%;background: black;padding: 15px;border-right: 1px solid white;height: 210px;">
+                            <div id="text-2883-sub_row_6-0-1-0-2" class="module module-text text-2883-sub_row_6-0-1-0-2   wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;background: #404040;width: 100%;display: inline-block;">
+                                <div style="float: left; width: 50%;background: #404040;padding: 15px;border-right: 1px solid white;height: 210px;">
                                     <h3 style="text-align: left;color: white;"><span style="color: #fff;">OUR ADRESS</span></h3>
                                     <p style="color: white;font-size: 14px;"><span style="color: #fff;"><a style="color: #fff;" href="https://goo.gl/maps/CVEZLY1pYM62">Zhytomyr, Gogol str., 4, of. 402, 4 floor</a></span></p>
                                     <hr>
@@ -407,7 +406,7 @@
                                     <p style="color: white;font-size: 14px;"><span style="color: #fff;">Mon. - Fri. from 10:00 to 18:00<br>Sat. - Sun. - under contract</span>
                                     </p>
                                 </div>
-                                <div style="float: left; width: 49%;background: black;padding: 15px;height: 210px;">
+                                <div style="float: left; width: 49%;background: #404040;padding: 15px;height: 210px;">
                                     <h3 style="text-align: left;color: white;"><span style="color: #fff;">OUR PHONE</span></h3>
                                     <p style="color: white;font-size: 14px;"><span style="color: #fff;"><a style="color: #fff;" href="tel:(067) 70-27-055">(067) 70-27-055</a>, <a style="color: #fff" href="tel:(093) 20-13-861">(093) 20-13-861</a></span></p>
                                     <hr>

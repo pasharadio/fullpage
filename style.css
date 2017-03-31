@@ -154,6 +154,9 @@ footer {
     background: black!important;
     padding: 2px 5px!important;
 }
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	background: #f00!important;
+}
 /*------- ANIMATION ----*/
 .scroll-down {
     position: relative;
