@@ -191,7 +191,9 @@ footer {
 .fp-slidesNav ul li a span {
     background: #f00!important;
 }
-
+.logo_dks{
+	height: 51px;margin-left: 236px;
+}
 /*------- ANIMATION ----*/
 
 .scroll-down {
@@ -241,6 +243,32 @@ footer {
     .fheight {
         display: block;
     }
+    .logo-full-img {
+    margin: 0 auto;
+width: 74%;
+    height: auto;
+}
+}
+@media (min-width: 676px) and (max-width: 979px){
+	.logo_dks{
+margin-left: 15%;
+}
+    .logo-full-img {
+    margin: 0 auto;
+    width: 73%;
+    height: auto;
+    margin-top: -230px;
+}
+}
+@media (min-width: 980px) and (max-width: 1000px){
+	.logo_dks{
+margin-left: 43%;
+}
+}
+@media (min-width: 1000px) and (max-width: 1100px){
+	.logo_dks{
+margin-left: 43%;
+}
 }
 @media screen and (max-width:676px){
 
