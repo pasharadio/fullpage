@@ -19,7 +19,7 @@
             //Navigation
             menu: '#menu',
             lockAnchors: true,
-            anchors: ['hero-image', 'rent-studio', 'studioServices', 'coworkPh', 'coworkMd', 'blog', 'contacts' ],
+            anchors: ['hero-image', 'rent-studio', 'studioServices', 'coworkPh', 'coworkMd', 'blog', 'contacts'],
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: ['LETS TALK', 'RENT', 'SERVICES', 'PH', 'MD', 'BLOG', 'CONTACTS'],
@@ -126,7 +126,7 @@
     <div id="fullpage">
         <div class="section f-section-bg" data-anchor="hero-image">
             <img src="img/logo.png" class="logo-full-img" alt="logo_full">
-            <div style="background: rgba(255, 255, 255, 0.3);width: 40%;height: 0px;display: block;margin: 0 auto;box-shadow: 0 0 110px 20px #fff;">
+            <div style="background: rgba(255, 255, 255, 0.3);width: 80%;height: 0px;display: block;margin: 0 auto;box-shadow: 0 0 110px 20px #fff;">
                 <h1 class="hero-heading">LET'S TALK ABOUT YOUR PROJECT</h1></div>
             <img class="scroll-down" src="img/down.svg" />
         </div>
@@ -489,7 +489,7 @@
                             </div>
                         </div>
                         <div class="col-md-6" style="border: 0px solid red;padding: 0">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.8601723394913!2d28.674605615724396!3d50.2571957794492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c64a28585933f%3A0x873e1c401405af82!2z0LLRg9C70LjRhtGPINCT0L7Qs9C-0LvRltCy0YHRjNC60LAsIDQsINCW0LjRgtC-0LzQuNGALCDQltC40YLQvtC80LjRgNGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1490711070120" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.8601723394913!2d28.674605615724396!3d50.2571957794492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c64a28585933f%3A0x873e1c401405af82!2z0LLRg9C70LjRhtGPINCT0L7Qs9C-0LvRltCy0YHRjNC60LAsIDQsINCW0LjRgtC-0LzQuNGALCDQltC40YLQvtC80LjRgNGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1490711070120" width="100%" height="540" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -515,6 +515,46 @@
         </div>
     </footer>
     <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+    #hellopreloader>p {
+        display: none;
+    }
+    
+    #hellopreloader_preload {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #404040 url(img/logo-lamp-animation.gif) center center no-repeat;
+        background-size: 79px;
+    }
+    </style>
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+        
+    </div>
+    <script type="text/javascript">
+    var hellopreloader = document.getElementById("hellopreloader_preload");
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function() {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interhellopreloader);
+                hellopreloader.style.display = "none";
+            }
+        }, 16);
+    }
+    window.onload = function() {
+        setTimeout(function() {
+            fadeOutnojquery(hellopreloader);
+        }, 1000);
+    };
+    </script>
+
 </body>
 
 </html>

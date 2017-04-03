@@ -192,7 +192,6 @@ footer {
     background: #f00!important;
 }
 
-
 /*------- ANIMATION ----*/
 
 .scroll-down {
@@ -242,6 +241,9 @@ footer {
     .fheight {
         display: block;
     }
+}
+@media screen and (max-width:676px){
+
 }
 
 :focus::-webkit-input-placeholder {
