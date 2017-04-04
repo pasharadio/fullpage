@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>photo.dks.ua</title>
+    <title>★ photo.dks.ua</title>
     <meta name="description" content="photo.dks.ua">
     <meta name="keywords" content="studio sofit">
     <meta name="author" content="photostudio">
@@ -21,6 +21,8 @@
     <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
     <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
     <script type="text/javascript" src="js/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="js/fullpage.dragAndMove.limited.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
     <title>Test</title>
     <script type="text/javascript">
     $(document).ready(function() {
@@ -45,8 +47,8 @@
             scrollBar: false,
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
-            loopBottom: false,
-            loopTop: false,
+            loopBottom: true,
+            loopTop: true,
             loopHorizontal: true,
             continuousVertical: false,
             continuousHorizontal: false,
@@ -144,12 +146,12 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 col-xs-12 paddingcentered">
-                            <h1>RENT STUDIO</h1>
-                            <p>Book rent a studio or photos calling administrator
+                            <h1 class="col-lg-12 col-md-12 col-sm-6 col-xs-6 margin_top">RENT STUDIO</h1>
+                            <p class="col-lg-12 col-md-12 col-sm-6 col-xs-6 margin_top">Book rent a studio or photos calling administrator
                                 <br><a href="tel:(067) 70-27-055">(067) 70-27-055</a>, <a href="tel:(093) 20-13-861">(093) 20-13-861</a></p>
                             <table cellspacing="0" style="width: 100%;display: inline-block;">
                                 <thead style="width: 100%;display: block;">
-                                    <tr style="display: block;height: 59px;">
+                                    <tr style="display: block;height: 40px;">
                                         <th style="background: red;padding: 10px;margin: 0;display: block;" rowspan="2">
                                             <h1 style="text-align: left; color: #ffffff; background: red; margin: 0; padding: 0 12px;">rent price</h1></th>
                                     </tr>
@@ -166,7 +168,7 @@
                                     <tr bgcolor="#ffffff" style="width: 100%;display: block;float: left;">
                                         <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;width: 50%;display: block;float: left;">Mon. — Fri.
                                             <br>from 18.00 to 10.00</td>
-                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#404040">200 UAH</td>
+                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 0;width: 50%;float: left;" bgcolor="#404040">200 UAH</td>
                                     </tr>
                                     <tr style="padding: 5px 0;display: inline-block;width: 50%;height: 1px;float: left;" bgcolor="#404040">
                                         <td style="height: 7px; display: block;">&nbsp;</td>
@@ -174,14 +176,14 @@
                                     <tr bgcolor="#ffffff" style="display: block;float: left;width: 100%;">
                                         <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;float: left;width: 50%;display: block;">Sat. — Sun.
                                             <br>from 10.00 to 18.00</td>
-                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#404040">200 UAH</td>
+                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 0;width: 50%;float: left;" bgcolor="#404040">200 UAH</td>
                                     </tr>
                                     <tr style="padding: 5px 0;display: inline-block;width: 50%;height: 1px;float: left;" bgcolor="#404040">
                                         <td style="height: 7px; display: block;">&nbsp;</td>
                                     </tr>
-                                    <tr bgcolor="#ffffff" style="display: inline-block;width: 100%;height: 50px;float: left;">
-                                        <td style="display: block;float: left;height: 50px; width: 50%;">&nbsp;</td>
-                                        <td style="color: #000000;font-size: 24px;line-height: 26px;padding: 0;margin: 0;display: block;width: 50%;float: left;"><span style="color: #000000; padding: 5px; display: block;"><a style="color: #000000; font-size: 18px;" href="index.html#rent-studio/1">terms of use of the studio</a></span></td>
+                                    <tr bgcolor="#ffffff" style="display: inline-block;width: 100%;height: 30px;float: left;">
+                                        <td style="display: block;float: left;height: 30px; width: 50%;">&nbsp;</td>
+                                        <td style="color: #000000;font-size: 24px;line-height: 0px;padding: 0;margin: 0;display: block;width: 50%;float: left;"><span style="color: #000000; padding: 5px; display: block;"><a style="color: #000000; font-size: 18px;" href="index.html#rent-studio/1">terms of use of the studio</a></span></td>
                                         <td>&nbsp;</td>
                                     </tr>
                                 </tbody>
@@ -192,14 +194,14 @@
                                 <br> Assisting during a photo session - 50 UAH / hour
                                 <br> Master classes and presentations - additional price</p>
                         </div>
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
                             <img src="img/rent.jpg" class="img-responsive rent-image" alt="bg_image">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="slide">
-                <ul>
+                <ul class="pravila">
                     <strong><h2>Правила аренды фотостудии и меры предосторожности:</h2></strong>
                     <li> Бронирование студии осуществляется через наши контактные данные или календарь сайта.</li>
                     <li> Находиться в съемочном помещении можно только в сменной обуви. Обувь, в которой модели будут принимать участие в съёмке, необходимо принести с собой сухой и чистой или протереть насухо! Возможно находится в студии без обуви, помещение теплое и чистое.</li>

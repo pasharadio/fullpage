@@ -81,7 +81,7 @@ h1 {
 }
 
 .paddingcentered {
-    padding: 30px 130px;
+    padding: 1% 8%;
 }
 
 hr {
@@ -108,7 +108,7 @@ p {
     margin: 0 0 10px;
 }
 
-ul {
+.pravila {
     padding: 4% 8%;
     font-size: 14px;
     color: #fff;
@@ -116,7 +116,7 @@ ul {
     list-style-type: decimal;
 }
 
-ul>li {
+.pravila>li {
     margin-bottom: 3px;
 }
 
@@ -124,18 +124,22 @@ ul>li {
     color: #3b5998;
     border-bottom: 3px solid #3b5998;
 }
-.fa-youtube-play:hover{
-	color: #CC181E;
-	    border-bottom: 3px solid #CC181E;
+
+.fa-youtube-play:hover {
+    color: #CC181E;
+    border-bottom: 3px solid #CC181E;
 }
-.fa-instagram:hover{
-	color: #8A3AB9;
-	    border-bottom: 3px solid #8A3AB9;
+
+.fa-instagram:hover {
+    color: #8A3AB9;
+    border-bottom: 3px solid #8A3AB9;
 }
-.fa-vk:hover{
-	color: #507299;
-	    border-bottom: 3px solid #507299;
+
+.fa-vk:hover {
+    color: #507299;
+    border-bottom: 3px solid #507299;
 }
+
 .blogblock {
     transition: all .5s linear;
 }
@@ -189,11 +193,18 @@ footer {
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    background: #f00!important;
+    background: #fff!important;
+    border-radius: 0!important;
+    border: 1px solid #000000!important;
+    transform: rotate(45deg);
 }
-.logo_dks{
-	height: 51px;margin-left: 236px;
+
+.logo_dks {
+    height: 51px;
+    margin-left: 236px;
 }
+
+
 /*------- ANIMATION ----*/
 
 .scroll-down {
@@ -239,41 +250,6 @@ footer {
     }
 }
 
-@media screen and (max-width:992px) {
-    .fheight {
-        display: block;
-    }
-    .logo-full-img {
-    margin: 0 auto;
-width: 74%;
-    height: auto;
-}
-}
-@media (min-width: 676px) and (max-width: 979px){
-	.logo_dks{
-margin-left: 15%;
-}
-    .logo-full-img {
-    margin: 0 auto;
-    width: 73%;
-    height: auto;
-    margin-top: -230px;
-}
-}
-@media (min-width: 980px) and (max-width: 1000px){
-	.logo_dks{
-margin-left: 43%;
-}
-}
-@media (min-width: 1000px) and (max-width: 1100px){
-	.logo_dks{
-margin-left: 43%;
-}
-}
-@media screen and (max-width:676px){
-
-}
-
 :focus::-webkit-input-placeholder {
     color: transparent
 }
@@ -289,3 +265,57 @@ margin-left: 43%;
 :focus:-ms-input-placeholder {
     color: transparent
 }
+
+
+/*MEDIA QUERY MAX-WIDTH:992*/
+
+@media screen and (max-width:992px) {
+    .fheight {
+        display: block;
+    }
+    .logo-full-img {
+        margin: 0 auto;
+        width: 74%;
+        height: auto;
+    }
+    .margin_top {
+        margin-top: 50px!important;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .h2,
+    h2 {
+        font-size: 20px;
+    }
+    .pravila {
+        font-size: 10px;
+        padding: 4% 10%;
+    }
+}
+
+@media (min-width: 676px) and (max-width: 979px) {
+    .logo_dks {
+        margin-left: 15%;
+    }
+    .logo-full-img {
+        margin: 0 auto;
+        width: 73%;
+        height: auto;
+        margin-top: -230px;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1000px) {
+    .logo_dks {
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .logo_dks {
+        margin-left: 43%;
+    }
+}
+
+@media screen and (max-width:676px) {}
