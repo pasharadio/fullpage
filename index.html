@@ -82,7 +82,7 @@
             parallax: false,
             parallaxOptions: {
                 type: 'reveal',
-                percentage: 62,
+                percentage: 60,
                 property: 'translate'
             },
 
@@ -523,14 +523,15 @@
             </div>
         </div>
     </footer>
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/js.cookie.js"></script>
     <style type="text/css">
     #hellopreloader>p {
         display: none;
     }
     
     #hellopreloader_preload {
-        display: block;
+        display: none;
         position: fixed;
         z-index: 99999;
         top: 0;
@@ -544,7 +545,7 @@
     <div id="hellopreloader">
         <div id="hellopreloader_preload"></div>
     </div>
-    <script type="text/javascript">
+    <!--     <script type="text/javascript">
     var hellopreloader = document.getElementById("hellopreloader_preload");
 
     function fadeOutnojquery(el) {
@@ -562,6 +563,21 @@
             fadeOutnojquery(hellopreloader);
         }, 1000);
     };
+    </script> -->
+    <script type="text/javascript">
+    $(document).ready(function($) {
+
+        if (Cookies.set('Preloader')) {
+            console.log("cookie ready");
+        } else {
+            console.log("cookie not ready");
+
+ 
+    // and now we create 1 year cookie
+    Cookies.set('Preloader', true, {path: '/',expire: 365}); console.log("cookie");
+
+    }
+    });
     </script>
 </body>
 
