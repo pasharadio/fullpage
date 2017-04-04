@@ -531,7 +531,7 @@
     }
     
     #hellopreloader_preload {
-        display: none;
+        display: block;
         position: fixed;
         z-index: 99999;
         top: 0;
@@ -567,10 +567,19 @@
     <script type="text/javascript">
     $(document).ready(function($) {
 
-        if (Cookies.set('Preloader')) {
-            console.log("cookie ready");
-        } else {
-            console.log("cookie not ready");
+        if (Cookies.set('Preloader'))
+    {
+        $('#hellopreloader').hide();
+        console.log("cookie add");
+    } 
+    else 
+    {
+        $(window).load(function() {
+            $('#hellopreloader').delay(1200).fadeOut(800,function() {
+                $(this).remove();
+                console.log("cookie not add");
+            });
+        });
 
  
     // and now we create 1 year cookie
