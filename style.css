@@ -39,6 +39,7 @@ footer {
     font-size: 32px;
     font-weight: lighter;
     text-align: center;
+    text-shadow: 2px 1px #e2e2e2;
 }
 
 .fheight {
@@ -52,7 +53,7 @@ footer {
 
 .logo-full-img {
     margin: 0 auto;
-    height: 70%;
+    width: 25%;
 }
 
 .rent-image {
@@ -115,7 +116,9 @@ p {
     text-align: left;
     list-style-type: decimal;
 }
-
+.bgrent{
+	background: url(img/bg.png)center;
+}
 .pravila>li {
     margin-bottom: 3px;
 }
@@ -159,27 +162,36 @@ p {
 .nopadding {
     padding: 0;
 }
-
+.carousel-control.left{
+	background: none;
+}
+.carousel-control.right{
+	background: none;
+}
+.carousel-indicators {
+    bottom: 0px;
+}
 footer {
-    height: 80px;
+    height: 50px;
+    padding: 0;
 }
 
 .fp-controlArrow.fp-prev {
-    width: 60px!important;
-    height: 60px;
+    width: 30px!important;
+    height: 30px;
     background: rgba(255, 255, 255, .7) url(img/back-arrow.svg) center no-repeat;
     border: 0;
 }
 
 .fp-controlArrow.fp-next {
-    width: 60px!important;
-    height: 60px;
+    width: 30px!important;
+    height: 30px;
     background: rgba(255, 255, 255, .7) url(img/forward-arrow.svg) center no-repeat;
     border: 0;
 }
 
 .fp-controlArrow {
-    top: 95%!important;
+    top: 90%!important;
 }
 
 #fp-nav ul li .fp-tooltip {
