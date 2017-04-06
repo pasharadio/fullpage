@@ -1,0 +1,32 @@
+ok - социалки - вк, инста, фб, тюб
+ok - софит поднять и меньше
+?? - стрелка-тень - лучь
+
+серый цвет и узор???
+
+узор расширяется??
+
+правила - иконка, сократить текст
+фон-узор?
+стрелки /2
+rentprice padding++++
+rentprice leftpadding0 leftanimationflyin
+terms...link+a hover red
+rentprice background:#202020
+td margin:10px 0 whitespacevertical
+
+first - image
+rent - dark
+service - white
+ph,md - white
+blog, contacts - dark
+
+studio services paddingleft,right=0
+прокрутить право, пропал значок
+slidenav bottom 0
+link to cantactform
+catalog,fashion...linkbtn border#202020
+
+contacts ourwork...color#ff0000
+
+footer 2017 | SOFIT bg#000color#fff

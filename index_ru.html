@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+    <meta charset="UTF-8">
+    <title>★ photo.dks.ua</title>
+    <meta name="description" content="photo.dks.ua">
+    <meta name="keywords" content="studio sofit">
+    <meta name="author" content="photostudio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!--***-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
     <script src="js/jquery.min.js"></script>
-    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
     <script src="js/jquery.easings.min.js"></script>
-    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
     <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
-    <script type="text/javascript" src="js/jquery.fullpage.js"></script>
+    <script type="text/javascript" type="text/javascript" src="js/jquery.fullpage.js"></script>
     <title>Test</title>
     <script type="text/javascript">
     $(document).ready(function() {
@@ -19,12 +26,12 @@
             //Navigation
             menu: '#menu',
             lockAnchors: true,
-            anchors: ['hero-image', 'rent-studio', 'studioServices', 'coworkPh', 'coworkMd', 'blog', 'contacts' ],
+            anchors: ['hero-image', 'rent-studio', 'studioServices', 'coworkPh', 'coworkMd', 'blog', 'contacts'],
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: ['LETS TALK', 'RENT', 'SERVICES', 'PH', 'MD', 'BLOG', 'CONTACTS'],
             showActiveTooltip: true,
-            slidesNavigation: true,
+            slidesNavigation: false,
             slidesNavPosition: 'bottom',
 
             //Scrolling
@@ -33,11 +40,11 @@
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 1000,
-            scrollBar: false,
+            scrollBar: true,
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
-            loopBottom: false,
-            loopTop: false,
+            loopBottom: true,
+            loopTop: true,
             loopHorizontal: true,
             continuousVertical: false,
             continuousHorizontal: false,
@@ -63,7 +70,7 @@
             //Design
             controlArrows: true,
             verticalCentered: false,
-            sectionsColor: ['#cacaca', '#404040', '#ffffff'],
+            sectionsColor: ['#fff', '#202020', '#ffffff', '#ffffff', '#ffffff', '#202020', '#202020'],
             paddingTop: '0',
             paddingBottom: '10px',
             fixedElements: '#header, .footer',
@@ -73,7 +80,7 @@
             parallax: false,
             parallaxOptions: {
                 type: 'reveal',
-                percentage: 62,
+                percentage: 60,
                 property: 'translate'
             },
 
@@ -103,21 +110,21 @@
 
 <body>
     <header id="totop">
-        <nav class="navbar navbar-ct-blue navbar-fixed-top navbar-transparent" role="navigation">
+        <nav class="navbar" role="navigation">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-3">
-                        <a href="https://www.facebook.com/productiondks/" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.youtube.com/channel/UC2j1iEuFgyPQqJ9gjm38niQ" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                        <a href="https://www.instagram.com/dks.production/" target="_blank"><i class="fa fa-instagram"></i></a>
-                        <a href="https://vk.com/dks.production" target="_blank"><i class="fa fa-vk"></i></a>
+                    <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12">
+                        <a rel="nofollow" href="https://vk.com/dks.production" target="_blank"><i class="fa fa-vk"></i></a>
+                        <a rel="nofollow" href="https://www.instagram.com/dks.production/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a rel="nofollow" href="https://www.facebook.com/productiondks/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a rel="nofollow" href="https://www.youtube.com/channel/UC2j1iEuFgyPQqJ9gjm38niQ" target="_blank"><i class="fa fa-youtube-play"></i></a>
                     </div>
-                    <div class="col-md-6 padding hidden-xs">
-                        <p class="text-center" href="#">PHOTO.DKS.UA</p>
+                    <div class="col-lg-6 col-md-6 col-sm-8 hidden-xs">
+                        <img src="img/logo_lamp+photodksua.svg" class="text-center logo_dks hidden-xs"></img>
                     </div>
-                    <div class="col-md-3 padding text-right hidden-xs">
-                        <a class="text-right" href="index_ru.html">RU</a>
-                        <a class="text-right" href="index.html">ENG</a>
+                    <div class="col-lg-3 col-md-3 col-sm-2 padding text-right hidden-xs">
+                        <a class="text-right" href="index.html">РУ</a>
+                        <a class="text-right" href="index_eng.html">ENG</a>
                     </div>
                 </div>
             </div>
@@ -125,72 +132,78 @@
     </header>
     <div id="fullpage">
         <div class="section f-section-bg" data-anchor="hero-image">
-            <img src="img/logo.png" class="logo-full-img" alt="logo_full">
-            <div style="    background: rgba(255, 255, 255, 0.3);width: 40%;height: 0px;display: block;margin: 0 auto;box-shadow: 0 0 110px 20px #fff;">
-                <h1 class="hero-heading">LET'S TALK ABOUT YOUR PROJECT</h1></div>
+            <img src="img/logo.png" class="logo-full-img hidden-lg hidden-md hidden-sm" alt="logo_full">
+            <div style="height: 40%" class="hidden-xs hidden-sm"></div>
+            <div style="height: 60%" class="hidden-lg hidden-md"></div>
+            <div style="width: 100%;height: 0px;display: block;margin: 10% 0;" class="hidden-xs hidden-sm">
+                <h1 class="hero-heading">ДАВАЙТЕ ПОГОВОРИМ О ВАШЕМ ПРОЕКТЕ</h1>
+            </div>
+            <div style="width: 100%;height: 0px;display: block;margin: 3% 0;" class="hidden-lg hidden-md">
+                <h1 class="hero-heading">ДАВАЙТЕ ПОГОВОРИМ О ВАШЕМ ПРОЕКТЕ</h1>
+            </div>
             <img class="scroll-down" src="img/down.svg" />
         </div>
         <div class="section" data-anchor="rent-studio">
             <div class="slide">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6 col-xs-12 paddingcentered">
-                            <h1>RENT STUDIO</h1>
-                            <p>Book rent a studio or photos calling administrator
+                        <div class="col-md-6 col-xs-12 nopadding bgrent">
+                            <h1 class="col-lg-12 col-md-12 col-sm-6 col-xs-6 margin_top">АРЕНДА СТУДИИ</h1>
+                            <p class="col-lg-12 col-md-12 col-sm-6 col-xs-6 margin_top">Чтобы арендовать студию или заказать съемку, свяжитесь с администратором
                                 <br><a href="tel:(067) 70-27-055">(067) 70-27-055</a>, <a href="tel:(093) 20-13-861">(093) 20-13-861</a></p>
                             <table cellspacing="0" style="width: 100%;display: inline-block;">
                                 <thead style="width: 100%;display: block;">
-                                    <tr style="display: block;height: 59px;">
+                                    <tr style="display: block;height: 50px;">
                                         <th style="background: red;padding: 10px;margin: 0;display: block;" rowspan="2">
-                                            <h1 style="text-align: left; color: #ffffff; background: red; margin: 0; padding: 0 12px;">rent price</h1></th>
+                                            <h1 style="text-align: left; color: #ffffff; background: red; margin: 0; padding: 0 12px;">стоимость аренды</h1></th>
                                     </tr>
                                 </thead>
                                 <tbody style="display: inline-block;width: 100%;background: white;">
                                     <tr bgcolor="#ffffff" style="width: 100%;display: block;height: 70px;padding: 0;margin: 0;">
-                                        <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;width: 50%;float: left;">Mon. — Fri.
-                                            <br>from 10.00 to 18.00</td>
-                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 4px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#404040">150 UAH</td>
+                                        <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;width: 50%;float: left;">Пн. — Пт.
+                                            <br>с 10.00 др 18.00</td>
+                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 4px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#404040">150грн</td>
                                     </tr>
                                     <tr style="padding: 5px 0;display: block;width: 50%;height: 10px;" bgcolor="#404040">
                                         <td style="height: 7px; display: block;">&nbsp;</td>
                                     </tr>
                                     <tr bgcolor="#ffffff" style="width: 100%;display: block;float: left;">
-                                        <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;width: 50%;display: block;float: left;">Mon. — Fri.
-                                            <br>from 18.00 to 10.00</td>
-                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#404040">200 UAH</td>
+                                        <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;width: 50%;display: block;float: left;">Пн. — Пт.
+                                            <br>с 18.00 до 10.00</td>
+                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 0;width: 50%;float: left;" bgcolor="#404040">200грн</td>
                                     </tr>
                                     <tr style="padding: 5px 0;display: inline-block;width: 50%;height: 1px;float: left;" bgcolor="#404040">
                                         <td style="height: 7px; display: block;">&nbsp;</td>
                                     </tr>
                                     <tr bgcolor="#ffffff" style="display: block;float: left;width: 100%;">
-                                        <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;float: left;width: 50%;display: block;">Sat. — Sun.
-                                            <br>from 10.00 to 18.00</td>
-                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 5px 0;width: 50%;float: left;" bgcolor="#404040">200 UAH</td>
+                                        <td style="color: #000000;font-size: 20px;line-height: 26px;padding: 5px 12px;text-align: left;float: left;width: 50%;display: block;">Сб. — Вс.
+                                            <br>с 10.00 до 18.00</td>
+                                        <td style="padding: 30px;color: #ffffff;text-align: left;font-size: 20px;line-height: 6px;height: 20px;display: block;margin: 0;width: 50%;float: left;" bgcolor="#404040">200грн</td>
                                     </tr>
                                     <tr style="padding: 5px 0;display: inline-block;width: 50%;height: 1px;float: left;" bgcolor="#404040">
                                         <td style="height: 7px; display: block;">&nbsp;</td>
                                     </tr>
-                                    <tr bgcolor="#ffffff" style="display: inline-block;width: 100%;height: 50px;float: left;">
-                                        <td style="display: block;float: left;height: 50px; width: 50%;">&nbsp;</td>
-                                        <td style="color: #000000;font-size: 24px;line-height: 26px;padding: 0;margin: 0;display: block;width: 50%;float: left;"><span style="color: #000000; padding: 5px; display: block;"><a style="color: #000000; font-size: 18px;" href="index.html#rent-studio/1">terms of use of the studio</a></span></td>
+                                    <tr bgcolor="#ffffff" style="display: inline-block;width: 100%;height: 30px;float: left;">
+                                        <td style="display: block;float: left;height: 30px; width: 50%;">&nbsp;</td>
+                                        <td style="color: #000000;font-size: 24px;line-height: 0px;padding: 0;margin: 0;display: block;width: 50%;float: left;"><span style="color: #000000; padding: 5px; display: block;"><a style="color: #000000; font-size: 18px;" href="index.html#rent-studio/1">правила использования студии</a></span></td>
                                         <td>&nbsp;</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <h2>ADDITIONAL SERVICES</h2>
-                            <p>Shooting and editing backstage HD format - 300 UAH / 30sec
-                                <br> Help at exhibiting light scheme - 50 UAH / scheme
-                                <br> Assisting during a photo session - 50 UAH / hour
-                                <br> Master classes and presentations - additional price</p>
+                            <h2>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
+                            <p>Съемка и монтаж backstage: HD формат — 300 грн/ 30сек
+                                <br>Помощь при выставлении световой схемы – 50 грн/схема
+                                <br>Ассистирование во время фотосессии – 50 грн/час
+                                <br>Проведение мастер-классов и презентаций — цена договорная</p>
                         </div>
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-lg-6 col-md-6 hidden-sm hidden-xs nopadding">
                             <img src="img/rent.jpg" class="img-responsive rent-image" alt="bg_image">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="slide">
-                <ul>
+                <ul class="pravila">
                     <strong><h2>Правила аренды фотостудии и меры предосторожности:</h2></strong>
                     <li> Бронирование студии осуществляется через наши контактные данные или календарь сайта.</li>
                     <li> Находиться в съемочном помещении можно только в сменной обуви. Обувь, в которой модели будут принимать участие в съёмке, необходимо принести с собой сухой и чистой или протереть насухо! Возможно находится в студии без обуви, помещение теплое и чистое.</li>
@@ -219,20 +232,47 @@
         </div>
         <div class="section" data-anchor="studioServices">
             <div class="container-fluid">
-                <div class="row padding">
-                    <h1 style="color: black;">STUDIO SERVICES</h1>
+                <div class="row">
                     <div class="col-md-4 col-xs-12" style="padding: 0;margin: 0;">
+                        <h1 style="color: black;">СТУДИЙНЫЕ УСЛУГИ</h1>
                         <img src="img/female_dress_detail.jpg" width="100%">
                     </div>
                     <div class="col-md-4 col-xs-12" style="padding: 0;margin: 0;">
-                        <h3 style="color: #000000;display: block;margin: 48% 0;text-align: center;">CATALOGS SHOOTING<br>FASHION PHOTOGRAPHY</h3>
+                        <h3 style="color: #000000;display: block;margin: 48% 0;text-align: center;">КАТАЛОЖНАЯ СЪЕМКА<br>FASHION СЪЕМКА</h3>
                     </div>
                     <div class="col-md-4 col-xs-12" style="padding: 0;margin: 0;">
-                        <div class="slide">
-                            <img src="img/female.jpg" width="100%">
-                        </div>
-                        <div class="slide">
-                            <img src="img/female.jpg" width="100%">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/female.jpg" class="img-responsive" height="100%">
+                                </div>
+                                <div class="item">
+                                    <img src="img/female.jpg" class="img-responsive" height="100%">
+                                </div>
+                                <div class="item">
+                                    <img src="img/female.jpg" class="img-responsive" height="100%">
+                                </div>
+                                <div class="item">
+                                    <img src="img/female.jpg" class="img-responsive" height="100%">
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <i class="fa fa-angle-left" style="position: absolute;top: 90%;color: red;"></i>
+                                <span class="sr-only">ПРЕД</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <i class="fa fa-angle-right" style="position: absolute;top: 90%;color: red;"></i>
+                                <span class="sr-only">СЛЕД</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -241,17 +281,16 @@
         <div class="section padding" data-anchor="coworkPh">
             <div class="container-fluid">
                 <div class="row">
-                    <h1 style="color: black;">COWORK PHOTOGRAPHER</h1>
+                    <h1 style="color: black;">СОТРУДНИЧЕСТВО С ФОТОГРАФРАМИ</h1>
                     <div class="slide">
-                        <h2 style="color: black;">Pavel Ivanov</h2>
+                        <h2 style="color: black;">СЕРГЕЙ МАРЧУК</h2>
                         <div class="col-md-2 col-xs-12 nopadding" style="margin: 0;border: 0px solid red;">
                             <img src="img/PHOTOGRAPHER.jpg" width="100%">
-                            <p style="color: black;">CONTACT
-                                <br> INFO
-                                <br> ADRESS
-                                <br> TEL
-                                <br> EMAIL
-                                <br> WEB
+                            <p style="color: black;">КОНТАКТЫ
+                                <br> инфо
+                                <br> тел
+                                <br> почта
+                                <br> сайт
                                 <br>
                             </p>
                         </div>
@@ -263,32 +302,7 @@
                         </div>
                         <div class="col-md-1 col-xs-12" style="margin: 0;border: 0px solid red;">
                             <div class="nextphblock">
-                                <div style="color: #000;-moz-transform: rotate(-90.0deg);-o-transform: rotate(-90.0deg);-webkit-transform: rotate(-90.0deg);margin-left: -10em;margin-right: -10em;font-size: 40px;margin-top: 250px;">NEXT PHOTOGRAPHER</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <h2 style="color: black;">Pavel Ivanov</h2>
-                        <div class="col-md-2 col-xs-12 nopadding" style="margin: 0;border: 0px solid red;">
-                            <img src="img/PHOTOGRAPHER.jpg" width="100%">
-                            <p style="color: black;">CONTACT
-                                <br> INFO
-                                <br> ADRESS
-                                <br> TEL
-                                <br> EMAIL
-                                <br> WEB
-                                <br>
-                            </p>
-                        </div>
-                        <div class="col-md-3 col-xs-12" style="border: 0px solid red;">
-                            <p style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, </p>
-                        </div>
-                        <div class="col-md-6 col-xs-12" style="margin: 0;border: 0px solid red;">
-                            <img src="img/PHOTOGRAPHER.jpg" width="100%" style="height: 530px;overflow: hidden;">
-                        </div>
-                        <div class="col-md-1 col-xs-12" style="padding: 0;margin: 0;border: 0px solid red;">
-                            <div class="nextphblock">
-                                <div style="color: #000;-moz-transform: rotate(-90.0deg);-o-transform: rotate(-90.0deg);-webkit-transform: rotate(-90.0deg);margin-left: -10em;margin-right: -10em;font-size: 40px;margin-top: 250px;">NEXT PHOTOGRAPHER</div>
+                                <div style="color: #000;-moz-transform: rotate(-90.0deg);-o-transform: rotate(-90.0deg);-webkit-transform: rotate(-90.0deg);margin-left: -10em;margin-right: -10em;font-size: 40px;margin-top: 250px;">СЛЕД. ФОТОГРАФ</div>
                             </div>
                         </div>
                     </div>
@@ -298,17 +312,16 @@
         <div class="section padding" data-anchor="coworkMd">
             <div class="container-fluid">
                 <div class="row">
-                    <h1 style="color: black;">COWORK MODELS</h1>
+                    <h1 style="color: black;">СОТРУДНИЧЕСТВО С МОДЕЛЯМИ</h1>
                     <div class="slide">
-                        <h2 style="color: black;">Alena Ivanova</h2>
+                        <h2 style="color: black;">ИРИНА РУСЕНКО</h2>
                         <div class="col-md-2 nopadding" style="margin: 0;border: 0px solid red;">
                             <img src="img/PHOTOGRAPHER.jpg" width="100%" style="height: 230px;overflow: hidden;">
-                            <p style="color: black;">CONTACT
-                                <br> INFO
-                                <br> ADRESS
-                                <br> TEL
-                                <br> EMAIL
-                                <br> WEB
+                            <p style="color: black;">КОНТАКТЫ
+                                <br> инфо
+                                <br> тел
+                                <br> почта
+                                <br> сайт
                                 <br>
                             </p>
                         </div>
@@ -317,29 +330,7 @@
                         </div>
                         <div class="col-md-1" style="margin: 0;border: 0px solid red;">
                             <div class="nextphblock">
-                                <div style="color: #000;-moz-transform: rotate(-90.0deg);-o-transform: rotate(-90.0deg);-webkit-transform: rotate(-90.0deg);margin-left: -10em;margin-right: -10em;font-size: 40px;margin-top: 250px;">NEXT MODELS</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <h2 style="color: black;">Alena Ivanova</h2>
-                        <div class="col-md-2 nopadding" style="margin: 0;border: 0px solid red;">
-                            <img src="img/PHOTOGRAPHER.jpg" width="100%" style="height: 230px;overflow: hidden;">
-                            <p style="color: black;">CONTACT
-                                <br> INFO
-                                <br> ADRESS
-                                <br> TEL
-                                <br> EMAIL
-                                <br> WEB
-                                <br>
-                            </p>
-                        </div>
-                        <div class="col-md-9 col-xs-12" style="margin: 0;border: 0px solid red;">
-                            <img src="img/PHOTOGRAPHER.jpg" width="100%" style="height: 530px;overflow: hidden;">
-                        </div>
-                        <div class="col-md-1" style="padding: 0;margin: 0;border: 0px solid red;">
-                            <div class="nextphblock">
-                                <div style="color: #000;-moz-transform: rotate(-90.0deg);-o-transform: rotate(-90.0deg);-webkit-transform: rotate(-90.0deg);margin-left: -10em;margin-right: -10em;font-size: 40px;margin-top: 250px;">NEXT MODELS</div>
+                                <div style="color: #000;-moz-transform: rotate(-90.0deg);-o-transform: rotate(-90.0deg);-webkit-transform: rotate(-90.0deg);margin-left: -10em;margin-right: -10em;font-size: 40px;margin-top: 250px;">СЛЕД. МОДЕЛЬ</div>
                             </div>
                         </div>
                     </div>
@@ -350,13 +341,13 @@
             <div class="slide">
                 <div class="container-fluid">
                     <div class="row" style="padding: 0px">
-                        <h1 style="color: black;padding-left: 15px;">BLOG</h1>
+                        <h1 style="color: #fff;padding-left: 15px;">ПОСЛЕДНИЕ НОВОСТИ</h1>
                         <div class="col-md-4" style="">
                             <div class="blogblock" style="background:url() center no-repeat;background-size:cover;border: 1px solid #cacaca;padding: 0;">
                                 <a href="" style="text-decoration: none;">
                                     <div style=" max-height: 390px;min-height: 200px;overflow: hidden; display: flex;align-items: center;"><img src="img/placeholder.jpg" class="img-responsive"></div>
-                                    <div style="background: rgba(0,0,0,.0);padding:15px;">
-                                        <h3 style="text-align: left;color: #000;">BLOG TITLE</h3>
+                                    <div style="background: #fff;padding:15px;">
+                                        <h3 style="text-align: left;color: #000;">ЗАГОЛОВОК</h3>
                                         <hr>
                                         <p style="color: #000;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... </p>
                                     </div>
@@ -367,8 +358,8 @@
                             <div class="blogblock" style="background:url() center no-repeat;background-size:cover;border: 1px solid #cacaca;padding: 0;">
                                 <a href="" style="text-decoration: none;">
                                     <div style=" max-height: 390px;min-height: 200px;overflow: hidden; display: flex;align-items: center;"><img src="img/placeholder.jpg" class="img-responsive"></div>
-                                    <div style="background: rgba(0,0,0,.0);padding:15px;">
-                                        <h3 style="text-align: left;color: #000;">BLOG TITLE</h3>
+                                    <div style="background: #fff;padding:15px;">
+                                        <h3 style="text-align: left;color: #000;">ЗАГОЛОВОК</h3>
                                         <hr>
                                         <p style="color: #000;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... </p>
                                     </div>
@@ -379,8 +370,8 @@
                             <div class="blogblock" style="background:url() center no-repeat;background-size:cover;border: 1px solid #cacaca;padding: 0;">
                                 <a href="" style="text-decoration: none;">
                                     <div style=" max-height: 390px;min-height: 200px;overflow: hidden; display: flex;align-items: center;"><img src="img/placeholder.jpg" class="img-responsive"></div>
-                                    <div style="background: rgba(0,0,0,.0);padding:15px;">
-                                        <h3 style="text-align: left;color: #000;">BLOG TITLE</h3>
+                                    <div style="background: #fff;padding:15px;">
+                                        <h3 style="text-align: left;color: #000;">ЗАГОЛОВОК</h3>
                                         <hr>
                                         <p style="color: #000;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... </p>
                                     </div>
@@ -395,31 +386,29 @@
             <div class="slide padding">
                 <div class="container-fluid">
                     <div class="row">
-                        <h1 style="color: black;">CONTACTS</h1>
-                        <div class="col-md-6" style="padding: 0;">
-                            <div id="text-2883-sub_row_6-0-1-0-2" class="module module-text text-2883-sub_row_6-0-1-0-2   wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;background: #404040;width: 100%;display: inline-block;">
-                                <div style="float: left; width: 50%;background: #404040;padding: 15px;border-right: 1px solid white;height: 210px;">
-                                    <h3 style="text-align: left;color: white;"><span style="color: #fff;">OUR ADRESS</span></h3>
-                                    <p style="color: white;font-size: 14px;"><span style="color: #fff;"><a style="color: #fff;" href="https://goo.gl/maps/CVEZLY1pYM62">Zhytomyr, Gogol str., 4, of. 402, 4 floor</a></span></p>
+                        <h1 style="color: #fff;">КОНТАКТЫ</h1>
+                        <div class="col-md-12" style="padding: 0;">
+                            <div id="text-2883-sub_row_6-0-1-0-2" class="module module-text text-2883-sub_row_6-0-1-0-2   wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;background: #202020;width: 100%;display: inline-block;">
+                                <div style="float: left; width: 50%;background: #202020;padding: 15px;border-right: 1px solid white;height: 210px;">
+                                    <h3 style="text-align: left;color: white;"><span style="color: #fff;">НАШ АДРЕС</span></h3>
+                                    <p style="color: white;font-size: 14px;"><span style="color: #fff;"><a style="color: #fff;" href="https://goo.gl/maps/CVEZLY1pYM62">Житомир, ул. Гоголевская, 4, оф.402, 4 этаж</a></span></p>
                                     <hr>
-                                    <h3 style="text-align: left;color: white;"><span style="color: #fff;">WE ARE WORKING</span></h3>
-                                    <p style="color: white;font-size: 14px;"><span style="color: #fff;">Mon. - Fri. from 10:00 to 18:00<br>Sat. - Sun. - under contract</span>
+                                    <h3 style="text-align: left;color: white;"><span style="color: #fff;">ВРЕМЯ РАБОТЫ</span></h3>
+                                    <p style="color: white;font-size: 14px;"><span style="color: #fff;">Пн. - Пт. с 10:00 до 18:00<br>Сб. - Вс. - по договоренности</span>
                                     </p>
                                 </div>
-                                <div style="float: left; width: 49%;background: #404040;padding: 15px;height: 210px;">
-                                    <h3 style="text-align: left;color: white;"><span style="color: #fff;">OUR PHONE</span></h3>
+                                <div style="float: left; width: 49%;background: #202020;padding: 15px;height: 210px;">
+                                    <h3 style="text-align: left;color: white;"><span style="color: #fff;">НАШИ ТЕЛЕФОНЫ</span></h3>
                                     <p style="color: white;font-size: 14px;"><span style="color: #fff;"><a style="color: #fff;" href="tel:(067) 70-27-055">(067) 70-27-055</a>, <a style="color: #fff" href="tel:(093) 20-13-861">(093) 20-13-861</a></span></p>
                                     <hr>
-                                    <h3 style="text-align: left;color: white;"><span style="color: #fff;">OUR EMAIL</span></h3>
+                                    <h3 style="text-align: left;color: white;"><span style="color: #fff;">НАШ EMAIL</span></h3>
                                     <p stcolor: white;font-size: 14px;><span style="color: #fff;"><a style="color: #fff;" href="mailto:dks.product@gmail.com">dks.product@gmail.com</a></span>
                                     </p>
                                 </div>
                             </div>
-                            <div id="text-2883-sub_row_6-0-1-0-3" class="module module-text text-2883-sub_row_6-0-1-0-3   wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;    display: inline-block;
-    width: 100%;
-    vertical-align: top;">
-                                <h3 style="text-align: left;padding: 10px 0;">WRITE US</h3>
-                                <div role="form" class="wpcf7" id="wpcf7-f3114-p2883-o1" lang="ru-RU" dir="ltr">
+                            <div id="text-2883-sub_row_6-0-1-0-3" class="module module-text text-2883-sub_row_6-0-1-0-3   wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;    display: inline-block;width: 100%;vertical-align: top;">
+                                <h3 style="text-align: left;padding: 10px 0;color: #fff" class="hidden">НАПИШИТЕ НАМ</h3>
+                                <div role="form" class="wpcf7 hidden" id="wpcf7-f3114-p2883-o1" lang="ru-RU" dir="ltr">
                                     <div class="screen-reader-response"></div>
                                     <form action="/fullpane/#wpcf7-f3114-p2883-o1" method="post" class="wpcf7-form" novalidate="novalidate">
                                         <div style="display: none;">
@@ -429,15 +418,15 @@
                                             <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f3114-p2883-o1">
                                             <input type="hidden" name="_wpnonce" value="95e7474d41">
                                         </div>
-                                        <div style="float:left;width:49%;"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required textfield" aria-required="true" aria-invalid="false" placeholder="Name"></span>
-                                            <hr>
-                                            <span class="wpcf7-form-control-wrap tel-441"><input type="tel" name="tel-441" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel telfield" aria-required="true" aria-invalid="false" placeholder="Phone"></span>
-                                            <hr>
+                                        <div style="float:left;width:49%;"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required textfield" aria-required="true" aria-invalid="false" placeholder="Имя"></span>
+                                            <hr style="border-top: 1px solid #202020;">
+                                            <span class="wpcf7-form-control-wrap tel-441"><input type="tel" name="tel-441" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel telfield" aria-required="true" aria-invalid="false" placeholder="Телефон"></span>
+                                            <hr style="border-top: 1px solid #202020;">
                                             <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email emailfield" aria-required="true" aria-invalid="false" placeholder="Email"></span>
                                         </div>
-                                        <div style="float:right;width:50%;"><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="4" class="wpcf7-form-control wpcf7-textarea textareafield" aria-invalid="false" placeholder="Message"></textarea></span>
-                                            <hr>
-                                            <input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit submit"><span class="ajax-loader"></span></div>
+                                        <div style="float:right;width:50%;"><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="4" class="wpcf7-form-control wpcf7-textarea textareafield" aria-invalid="false" placeholder="Сообщение"></textarea></span>
+                                            <hr style="border-top: 1px solid #202020;">
+                                            <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit submit"><span class="ajax-loader"></span></div>
                                         <style>
                                         .textfield,
                                         .emailfield,
@@ -488,25 +477,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6" style="border: 0px solid red;padding: 0">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.8601723394913!2d28.674605615724396!3d50.2571957794492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c64a28585933f%3A0x873e1c401405af82!2z0LLRg9C70LjRhtGPINCT0L7Qs9C-0LvRltCy0YHRjNC60LAsIDQsINCW0LjRgtC-0LzQuNGALCDQltC40YLQvtC80LjRgNGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1490711070120" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" style="border: 0px solid red;padding: 0">
+                            <iframe style="margin-top:-130px;" rel="nofollow" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5101.720321060527!2d28.676794!3d50.257196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c64a28585933f%3A0x873e1c401405af82!2z0LLRg9C70LjRhtGPINCT0L7Qs9C-0LvRltCy0YHRjNC60LAsIDQsINCW0LjRgtC-0LzQuNGALCDQltC40YLQvtC80LjRgNGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2s!4v1491472086556" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer style="display: none;">
+    <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 padding pull-left">
+                <div class="col-md-12 padding">
                     <a class="text-center" href="#">2017 | STUDIO SOFIT</a>
-                </div>
-                <div class="col-md-6">
-                    <a href="https://www.facebook.com/productiondks/" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.youtube.com/channel/UC2j1iEuFgyPQqJ9gjm38niQ" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                    <a href="https://www.instagram.com/dks.production/" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://vk.com/dks.production" target="_blank"><i class="fa fa-vk"></i></a>
                 </div>
                 <div class="col-md-3 padding pull-left">
                     &nbsp;
@@ -514,7 +497,72 @@
             </div>
         </div>
     </footer>
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/js.cookie.js"></script>
+    <style type="text/css">
+    #hellopreloader>p {
+        display: none;
+    }
+    
+    #hellopreloader_preload {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #404040 url(img/logo-lamp-animation.gif) center center no-repeat;
+        background-size: 79px;
+    }
+    </style>
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+    <!--     <script type="text/javascript">
+    var hellopreloader = document.getElementById("hellopreloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function() {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interhellopreloader);
+                hellopreloader.style.display = "none";
+            }
+        }, 16);
+    }
+    window.onload = function() {
+        setTimeout(function() {
+            fadeOutnojquery(hellopreloader);
+        }, 1000);
+    };
+    </script> -->
+    <script type="text/javascript">
+    $(document).ready(function($) {
+
+        if (Cookies.set('Preloader')) {
+            $('#hellopreloader').hide();
+            console.log("cookie add");
+        } else {
+            $(window).load(function() {
+                $('#hellopreloader').delay(1200).fadeOut(800, function() {
+                    $(this).remove();
+                    console.log("cookie not add");
+                });
+            });
+
+
+            // and now we create 1 year cookie
+            Cookies.set('Preloader', true, {
+                path: '/',
+                expire: 365
+            });
+            console.log("cookie");
+
+        }
+    });
+    </script>
 </body>
 
 </html>
